@@ -181,12 +181,41 @@ div.wrapper {
 		font-size: @fontmd;
 	}
 
+	table {
+		width: 100%;
+		text-align: left;
+
+
+		tr {
+			padding: 20px;
+
+			&:nth-child(odd) {
+				background-color: lightgray;
+			}
+
+			th {
+				font-weight: bold;
+				padding: 10px 20px;
+
+				&:first-child {
+					border-top-left-radius: 30px;
+				}
+
+				&:last-child {
+					border-top-right-radius: 30px;
+				}
+			}
+
+			td {
+				padding: 10px 20px;
+			}
+		}
+	}
+
 	div {
 
 		padding: 10px;
-		&:nth-child(even) {
-			background-color: lightgray;
-		}
+		
 	}
 
 	.titles {

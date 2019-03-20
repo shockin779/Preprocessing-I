@@ -236,11 +236,31 @@ div.wrapper .about-section .about-button button {
 .work-history h1 {
   font-size: 24px;
 }
+.work-history table {
+  width: 100%;
+  text-align: left;
+}
+.work-history table tr {
+  padding: 20px;
+}
+.work-history table tr:nth-child(odd) {
+  background-color: lightgray;
+}
+.work-history table tr th {
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.work-history table tr th:first-child {
+  border-top-left-radius: 30px;
+}
+.work-history table tr th:last-child {
+  border-top-right-radius: 30px;
+}
+.work-history table tr td {
+  padding: 10px 20px;
+}
 .work-history div {
   padding: 10px;
-}
-.work-history div:nth-child(even) {
-  background-color: lightgray;
 }
 .work-history .titles {
   display: flex;
