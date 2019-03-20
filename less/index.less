@@ -57,3 +57,175 @@ html, body {
     height: 100%;
 }
 
+
+/*Start my styles*/
+/*Variables*/
+@fontstack: 'Montserrat', sans-serif;
+@fontlg: 48px;
+@fontmd: 24px;
+@fontsm: 16px;
+
+.flex-setup(@direction, @justify, @align){
+	display: flex;
+	flex-direction: @direction;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+
+.container {
+	width: 80%;
+	max-width: 900px;
+	margin: 0 auto;
+	font-family: @fontstack;
+}
+
+/*Header Styles*/
+header {
+	margin: 15px 0;
+	display: flex;
+	flex-direction: row-reverse;
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		width: 30%;
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+	}
+}
+
+/*About Section Styles*/
+
+div.wrapper {
+	width: 100%;
+	height: 500px;
+	background: lightblue;
+	border-radius: 10px;
+	margin-bottom: 20px;
+
+	.about-section {
+		padding: 30px;
+		.flex-setup(column, center, center);
+
+		img {
+			width: 200px;
+			height: auto;
+			margin-bottom: 20px;
+		}
+
+		.name-title {
+			.flex-setup(column, center, center);
+			padding-bottom: 15px;
+			border-bottom: 2px dotted green;
+
+			h1 {
+				font-size: @fontlg;
+				margin-bottom: 10px;
+			}
+		}
+
+		.about-button {
+			.flex-setup(column, center, center);
+			margin-top: 20px;
+
+			p {
+				margin-bottom: 15px;
+			}
+
+			button {
+				background: darkgray;
+				padding: 10px;
+				font-size: @fontsm;
+			}
+		}
+	}
+}
+
+.info-columns {
+	.flex-setup(row, space-between, flex-start);
+	margin-bottom: 25px;
+
+	div {
+		width: 61%;
+		padding-right: 15px;
+
+		h1 {
+			margin-bottom: 15px;
+			font-size: @fontmd;
+		}
+	}
+
+	.skills {
+		width: 38%;
+		p {
+			border: 1px solid black;
+			padding: 12px;
+			padding-left: 20px;
+			font-size: 14px;
+
+			&:last-child{
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+		}
+	}
+}
+
+/*History Styles*/
+.work-history {
+	h1 {
+		font-size: @fontmd;
+	}
+
+	div {
+
+		padding: 10px;
+		&:nth-child(even) {
+			background-color: lightgray;
+		}
+	}
+
+	.titles {
+		
+		display: flex;
+		justify-content: space-between;
+
+		span {
+			display: inline-block;
+			font-weight: bold;
+		}
+
+		.span-1 {
+			// width: 20px;
+		}
+		.span-2 {
+			// width: 50px;
+		}
+		.span-3 {
+			// width: 80px;
+		}
+		.span-4 {
+			// width: 200px;
+		}
+	}
+	
+}
+
+/*Footer Styles*/
+footer {
+	width: 950px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 50px;
+	background: slategray;
+	.flex-setup(row, center, flex-start);
+
+	p {
+		margin-top: 15px;
+
+	}
+}
