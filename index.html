@@ -7,6 +7,7 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +15,96 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <section class="about-section">
+        <img src="img/Me.jpg" alt="Picture of me">
+        <div class="name-title">
+          <h1>Sean Hockin - Web Dev</h1>
+          <p>I am an experienced developer always looking to
+            grow my skills.
+          </p>
+        </div>
+        <div class="about-button">
+          <p>I enjoy working on side projects and if you would like
+            my assistance, reach out to me below!
+          </p>
+          <button>Lets Team Up</button>
+        </div>
+      </section>
+    </div>
+    
+
+    <section class="info-columns">
+      <div>
+        <h1>Listen Up...</h1>
+        <p>I have been in the field for a few years now
+          and am always looking to become better at what
+          I do. You are welcome to follow me on Github
+          and other forms of media. Just reach out to me
+          and we will go from there. Thanks!
+        </p>
+      </div>
+      <div class="skills">
+        <h1>Skills</h1>
+        <p>Playing Video Games</p>
+        <p>Coding</p>
+        <p>Sleeping</p>
+        <p>Eating</p>
+        <p>Learning</p>
+      </div>
+    </section>
+
+    <section class="work-history">
+      <h1>Work History</h1>
+      <hr>
+
+      <table>
+        <tr>
+          <th>Yrs</th>
+          <th>Company</th>
+          <th>Title</th>
+          <th>Tech Used</th>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Google</td>
+          <td>Senior Software Engineer</td>
+          <td>React Native</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Amazon</td>
+          <td>Full Stack Web Developer</td>
+          <td>Node JS, Angular</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Apple</td>
+          <td>ios Developer</td>
+          <td>Swift</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Microsoft</td>
+          <td>Software Engineer</td>
+          <td>.NET</td>
+        </tr>
+      </table>
+    </section>
+  </div>
+
+  <footer>
+    <p>Copyright Sean &copy;2019</p>
+  </footer>
 </body>
 </html>

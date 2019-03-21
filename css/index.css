@@ -1,1 +1,331 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/*Start my styles*/
+/*Variables*/
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+/*Header Styles*/
+header {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  header nav a {
+    width: 100%;
+    font-size: 24px;
+    padding: 20px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    text-align: center;
+  }
+}
+/*About Section Styles*/
+div.wrapper {
+  width: 100%;
+  height: auto;
+  background: lightblue;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+div.wrapper .about-section {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.wrapper .about-section img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+div.wrapper .about-section .name-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 2px dotted green;
+}
+div.wrapper .about-section .name-title h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+div.wrapper .about-section .about-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+div.wrapper .about-section .about-button p {
+  margin-bottom: 15px;
+}
+div.wrapper .about-section .about-button button {
+  background: darkgray;
+  padding: 10px;
+  font-size: 16px;
+}
+.info-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+.info-columns div {
+  width: 61%;
+  padding-right: 15px;
+}
+.info-columns div h1 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.info-columns .skills {
+  width: 38%;
+}
+.info-columns .skills p {
+  border: 1px solid black;
+  padding: 12px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+.info-columns .skills p:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+@media (max-width: 500px) {
+  .info-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-columns div {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .info-columns div:first-child {
+    padding-bottom: 40px;
+    border-bottom: 2px solid gray;
+  }
+  .info-columns .skills {
+    width: 100%;
+  }
+  .info-columns .skills h1 {
+    text-align: center;
+  }
+  .info-columns .skills p {
+    width: 100%;
+    text-align: center;
+  }
+}
+/*History Styles*/
+.work-history h1 {
+  font-size: 24px;
+}
+.work-history table {
+  width: 100%;
+  text-align: left;
+}
+.work-history table tr {
+  padding: 20px;
+}
+.work-history table tr:nth-child(odd) {
+  background-color: lightgray;
+}
+.work-history table tr th {
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.work-history table tr th:first-child {
+  border-top-left-radius: 30px;
+}
+.work-history table tr th:last-child {
+  border-top-right-radius: 30px;
+}
+.work-history table tr td {
+  padding: 10px 20px;
+}
+@media (max-width: 500px) {
+  .work-history table {
+    width: 90%;
+  }
+}
+/*Footer Styles*/
+footer {
+  max-width: 950px;
+  width: 95%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: slategray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer p {
+  margin-top: 15px;
+}
